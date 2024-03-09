@@ -1,1 +1,87 @@
+body {
+    font-family: Consolas, monospace;
+    background-color: #EEEEEE;
+    margin: 20px;
+    color: white;
+    transition: all 1s;
+}
+h1 {
+    text-align: center;
+    color: #566573;
+    text-shadow: 0px 0px 10px;
+    transition: all 1s;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    padding: 2px;
+    background: #455A64;
+}
+::-webkit-scrollbar-thumb {
+    background: #85929E;
+    border-radius: 10px;
+}
+.main {
+    margin-bottom: 40px;
+    width: 90%;
+    height: auto;
+    background: #455A64;
+    border-radius: 10px;
+    padding: 5%;
+    transition: all 1s;
+}
+.code {
+    resize: none;
+    overflow: auto;
+    min-height: 500px;
+    border: 1px solid #ddb6ff;
+    width: 90%;
+    color: white;
+    font-size: 100%;
+    padding: 5%;
+    background: #455A64;
+    border-radius: 10px;
+    border: 2px solid white;
+    margin-top: 40px;
+    transition: all 1s;
+}
+.copy-button {
+    right: 50px;
+    position: absolute;
+    color: #cddae7;
+    text-shadow: #cddae7 0px 0px 10px;
+    font: bold;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding-top: 10px;
+    scale: 1;
+    transition: all 1s;
+}
+.b2 {
+    right: 110px;
+}
+.heading {
+    font-size: 30px;
+    color: #cddae7;
+    text-shadow: #cddae7 0px 0px 10px;
+}
 
+/* for desktop users */
+@media only screen and (min-width: 768px) {
+    .code {
+        font-size: 25px; 
+    }
+    h1 {
+        font-size: 50px;
+    }
+    .heading {
+        font-size: 50px;
+    }
+    .copy-button {
+        right: 100px;
+        scale: 1.5;
+    }
+    .b2 {
+        right: 190px;
+    }
+}

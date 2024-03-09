@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+    
+	<div class="main">
+		<h1>Loading animation</h1>
+		<div class="move"></div>
+		<div class="c c1"></div>
+		<div class="c c2"></div>
+		<div class="c c3"></div>
+		<div class="c c4"></div>
+		<div class="c c5"></div>
+		<div class="c c6"></div>
+		<div class="c c7"></div>
+		<div class="c c8"></div>
+	</div>
+<style type="text/css">
+	body {
+    	font-family: Consolas, monospace;
+		background: black;
+		color: white;
+	}
+	.main {
+	 position: absolute;
+	 left: -30%;
+		margin: 0 auto;
+		scale: 0.5;
+	}
+	h1 {
+		padding-left: 130px;
+	}
+	.c {
+		width:80px;
+		height:80px;
+		border-radius: 50px;
+		background: white;
+		color: #95a2ff;
+		position: absolute;
+		box-shadow: 0px 0px 50px;
+
+	}
+	.move {
+		width:80px;
+		height:80px;
+		border-radius: 50px;
+		background: white;
+		position: absolute;
+		animation: move infinite 2s;
+		color: white;
+		box-shadow: 0px 0px 20px;
+		filter: blur(4px);
+	}
+	.c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8 {
+		animation: scale infinite 2s;
+	}
+	.c1 { 
+		left:250px;
+		top:100px;
+		animation-delay: .250s;
+	}
+	.c2 {
+		left:355px;
+		top:145px;
+		animation-delay: .800s;
+	}
+	.c3 {
+		left:400px;
+		top:250px;
+		animation-delay: 1.750s;
+	}
+	.c4 {
+		left:355px;
+		top:355px;
+		animation-delay: .500s;
+	}
+	.c5 {
+		left:250px;
+		top:400px;
+		animation-delay: 1.250s;
+	}
+	.c6 {
+		left:145px;
+		top:355px;
+		animation-delay: 2.000s;
+	}
+	.c7 {
+		left:100px;
+		top:250px;
+		animation-delay: .750s;
+	}
+	.c8 {
+		left:145px;
+		top:145px;
+		animation-delay: 1.500s;
+	}
+	@keyframes move {
+		0%{ left:250px; top:100px; }
+		37.5%{ left:355px; top:145px; }
+		75%{ left:400px; top:250px; }
+		12.5%{ left:355px; top:355px; }
+		50%{ left:250px; top:400px; }
+		87.5%{ left:145px; top:355px; }
+		25%{ left:100px; top:250px; }
+		62.5%{ left:145px; top:145px; }
+		100%{ left:250px; top:100px; }
+	}
+	@keyframes scale {
+		0%{ scale: 1.2; background: white; }
+		1%{ scale:1.2; background: #556dff; }
+		20%{ scale:1.2; background: #556dff; }
+		90%{ scale:1.0; }
+		100%{ scale: 1.2; background: white; }
+	}
+	@media only screen and (min-width: 768px) {
+		.main {
+			scale: 1;
+		}
+	}
+@media only screen and (min-width: 768px) {
+    .main{
+        position: absolute;
+        left: 20%;
+        scale: 2;
+    }
+}
+</style>
+</body>
+</html>
