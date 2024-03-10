@@ -3,9 +3,10 @@ body {
 	background: #1B2631;
 	font-family: Consolas, monospace;
 }
-h1 {
+h2 {
 	color: white;
 	text-align: center;
+	transition: all 1s;
 }
 .prolist {
 	margin: 5%;
@@ -14,25 +15,29 @@ h1 {
 	background: #5b5ba1;
 	border-radius: 25px;
 	padding: 5%;
+	transition: all 1s;
 }
 img {
 	width: 100%;
 	border-radius: 20px;
 	max-width: 750px;
 	box-shadow: #8a6dff 0px 0px 40px;
+	transition: all 1s;
 }
 p {
 	color: white;
 	text-shadow: #8a6dff 5px 5px 10px;
+	transition: all 1s;
 }
 .content {
 	position: relative;
 }
-h2 {
+h3 {
 	position: absolute;
 	right: 20px;
 	top: 10px;
 	color: white;
+	transition: all 1s;
 	transition: all 1s;
 }
 ::-webkit-scrollbar {
@@ -45,9 +50,12 @@ h2 {
     border-radius: 10px;
 }
 @media only screen and (min-width: 768px) {
-	h1 {
+	h2 {
 		font-size: 50px;
 	}
+	.prolist h2 {
+		text-align: left;
+	} 
 	p {
 		font-size: 25px;
 	}
